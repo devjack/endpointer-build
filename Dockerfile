@@ -31,4 +31,4 @@ ADD . /build
 
 #ADD ./dist /build/public
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/sh", "-c"]

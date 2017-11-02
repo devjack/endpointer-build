@@ -20,6 +20,11 @@ RUN dpkg -i /tmp/hugo.deb \
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN  apt-get install -y nodejs
 
+# Endpointer
+RUN pip3 install endpointer
+
+
+
 WORKDIR /build
 
 ADD . /build
